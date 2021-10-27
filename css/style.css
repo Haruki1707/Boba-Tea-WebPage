@@ -47,9 +47,22 @@ a.navbar-brand{
 /***** IMAGEN PRINCIPAL *****/
 @media (max-width:  992px){
    #imgMain{
+        filter: blur(4px) opacity(0.78);
+    }
 
-    filter: blur(4px) opacity(0.78);
+    .eslogan{
+        margin-top: 10px;
+        font-size: 7vw !important;
+    }
 
+    #mainSectionText{
+        font-size: 4vw !important;
+    }
+
+    button{
+        font-size: 3vw !important;
+        width: auto !important;
+        height: 7vw !important;
     }
 }
 
