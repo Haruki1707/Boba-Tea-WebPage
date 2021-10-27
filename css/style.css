@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Devonshire&family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Devonshire&family=Oswald:wght@700&family=Poppins:wght@700;800&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/***** MENÚ *****/
+
+#menu{
+	box-shadow: 2px 4px 5px #3e2142;
+	background-color: #29092E !important;
+    position: static;
+}
+
+#logo{
+	font-size: xx-large;
+	font-family: 'Bebas Neue', cursive;
+	padding: 0px 5px;
+}
+
+a.navbar-brand{
+    padding-left: 20px;
+}
+
+#navbarNavAltMarkup{
+    justify-content: right;
+    padding-right: 20px;
+}
+
+.nav-link{
+    font-family: 'Poppins', sans-serif;
+    color: #29092E;
+    text-align: center;
+    font-weight: bold;
+    padding: 8px 12px !important;
+    margin-right: 12px;
+    border-radius: 20px;
+}
+
+.nav-link:hover{
+    background-color:#F37C36 ;
+
+}
+
+
+/***** IMAGEN PRINCIPAL *****/
+@media (max-width:  992px){
+   #imgMain{
+
+    filter: blur(4px) opacity(0.78);
+
+    }
+}
+
+#imgMain{
+    padding: 0 !important;
+}
+
+#mainSection, .titleDiv{
+    padding: 0 !important;
+    margin: 0 !important;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+#mainSection img{
+    width: 100%;
+    height: auto;
+}
+
+#mainSectionText, .titles{
+    position: absolute;
+}
+
+.eslogan{
+    font-size: 35px;
+    text-align: center;
+}
+
+h3.eslogan{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #F37C36;
+}
+
+h4.eslogan{
+    font-family: 'Devonshire', cursive;
+    color: #4EA667;
+}
+
+ button.btn{
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 2px 4px 5px #3e2142;
+    color: #29092E;
+    font-weight: bold;
+    border-radius: 30px;
+    width: 40%;
+    align-items: center;
+    border-color: #29092E;
+    margin-top: 5%;
+    margin-right: 1%;
+    height: 50px;
+    text-transform: uppercase;
+ }
+
+ button.btn:hover{
+    background-color: #29092E;
+ }
+
+/***** CARTA PRESENTACIÓN *****/
+.titleDiv img{
+    display: block;
+    margin: 2.5em auto;
+    width: auto;
+}
+
+.titles{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+.card-title, .title{
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #F37C36;
+    text-align: center;
+}
+
+.card-text{
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+}
+#exampleCategory{
+    display: none;
+}
+#examplecard{
+    display: none;
+}
+
+#productsCards{
+    padding-bottom: 5%;
+}
+
+.card-body{
+        font-size: 2.3vh;
+}
+
+/***** MENÚ DIGITAL *****/
+
+.menuCategory{
+    background: rgba(78, 166, 103, 1.0);
+    border-radius: 25px;
+    margin-bottom: 10vh;
+}
+
+.categoryTitle{
+    padding-left: 10vh;
+    padding-top: 5vh;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: #29092E;
+}
+
+.rowPersonalized{
+    padding: 3vh 5vh !important;
+}
+
+.cardPersonalized, .imgMenu{
+    border-top-right-radius: 25px !important;
+    border-bottom-left-radius: 25px !important;
+}
+
+.bodyPersonalized{
+    padding: 14px 14px 0px 14px !important;
+    margin-bottom: 20px;
+}
+
+.titleItem{
+    text-align: left;
+    text-transform: none;
+    font-size: 3vh;
+}
+
+.price{
+    position: absolute;
+    bottom: -10px;
+    right: 15px;
+    text-align: right;
+    font-weight: bold;
+}
+
+/***** CONTACTANOS *****/
+
+#contactanos {
+    background: linear-gradient(rgba(41,9,46,0.6),rgba(41,9,46,1)),url(../img/FoodPattern.png) center no-repeat;
+    color: #F37C36;
+    font-family: 'Raleway', sans-serif;
+}
+
+h4.boldFooter{
+    font-weight: bold;
+}
+
+.title{
+    font-size: 35px;
+}
+
+
