@@ -3,110 +3,114 @@
 		{
 			"name": "Strawberry Explotion",
 			"description": "Milk tea con base leche saborizado con fresas frescas.",
-			"price": "$2.75"
+			"price": "2.75",
+			"discount": "0.50"
 		},
 		{
 			"name": "Expresso fussion",
 			"description": "Fresh tea con base cafe con una llovizna con sabor a chocolate.",
-			"price": "$2.50"
+			"price": "2.50"
 		},
 		{
 			"name": "Oreo Attack",
 			"description": "Milk tea con base leche, delicioso sabor a chocolate y trocitos de galleta.",
-			"price": "$2.75"
+			"price": "2.75"
 		},
 		{
 			"name": "Ninja Fruit",
 			"description": "Fresh tea con base té para los amantes de las frutas.",
-			"price": "$2.50"
+			"price": "2.50"
 		},
 		{
 			"name": "Bubble Matcha",
 			"description": "Fresh tea elaborado con bolas de tapioca en almíbar de azúcar morena, leche de avena y té verde matcha",
-			"price": "$2.75"
+			"price": "2.75"
 		},
 		{
 			"name": "Coconut tropical",
 			"description": "Fresh tea con base leche de coco. Comparte este sabor tropical.",
-			"price": "$2.50"
+			"price": "2.50",
+			"discount": "0.50"
 		}
 	],
 	"Hamburguesas": [
 		{
 			"name": "Double beef hamburguer",
 			"description": "Prueba nuestra deliciosa hamburguesa de carne doble.",
-			"price": "$3.00"
+			"price": "3.00"
 		},
 		{
 			"name": "Chicken hamburguer",
 			"description": "Esta es una hamburguesa con un crocante pollo empanizado y los mejores vegetales.",
-			"price": "$3.50"
+			"price": "3.50"
 		},
 		{
 			"name": "Veggie hamburguer",
 			"description": "Preparate para deleitar tu paladar con el delicioso sabor de los vegetales.",
-			"price": "$2.75"
+			"price": "2.75"
 		}
 	],
 	"Snacks": [
 		{
 			"name": "Panini",
 			"description": "Prueba nuestros paninis completos con ingredientes de tu elección: atún, pollo, carne o jamón.",
-			"price": "$2.75"
+			"price": "2.75",
+			"discount": "0.50"
 		},
 		{
 			"name": "Veggie Nachos",
 			"description": "Unos nachos para chuparse los dedos ¿quien dijo que hace falta carne para deleitarse?",
-			"price": "$3.50"
+			"price": "3.50"
 		},
 		{
 			"name": "Nachos con carne",
 			"description": "Te presentamos unos nachos con carne de la mejor calidad, queso, frijoles, salsas y limón.",
-			"price": "$4.50"
+			"price": "4.50"
 		},
 		{
 			"name": "Papitas fritas",
 			"description": "Deliciosas papitas cortadas a la francesa y sazonadas. Agrega hasta 3 aderezos a tu orden de papitas.",
-			"price": "$1.75"
+			"price": "1.75"
 		},
 		{
 			"name": "Ensalada suprema",
 			"description": "Esta es una ensalada completa: pan, lechuga, vegetales a tu elección, aderezo y un queso.",
-			"price": "$2.00"
+			"price": "2.00"
 		}
 	],
 	"Postres": [
 		{
 			"name": "Apple Pie",
 			"description": "Te presentamos un crocante pie de manzana con un toque de caramelo.",
-			"price": "$2.25"
+			"price": "2.25"
 		},
 		{
 			"name": "Frozen",
 			"description": "Prueba nuestro margnifico frozen de sabores combinados.",
-			"price": "$1.25"
+			"price": "1.25"
 		},
 		{
 			"name": "Snowboba",
 			"description": "Disfruta de un helado con frutas naturales y un toque de tapioca.",
-			"price": "$1.50"
+			"price": "1.50",
+			"discount": "0.35"
 		}
 	],
 	"Pizzas": [
 		{
 			"name": "Pollo deluxe",
 			"description": "Disfruta de tu pizza con deliciosos trozos de pechuga de pollo, queso mozzarella.",
-			"price": "$12.50"
+			"price": "12.50"
 		},
 		{
 			"name": "La Indecisa",
 			"description": "Decide hasta 8 diferentes ingredientes para tu pizza siempre con los mejores quesos y salsa.",
-			"price": "$11.00"
+			"price": "11.00"
 		},
 		{
 			"name": "Festín de quesos",
 			"description": "¿Mozzarella?, ¿Parmesano?, ¿Gouda?, ¿Provolone? ¡Sí! Pruébalos todos en el Festín de quesos.",
-			"price": "$10.50"
+			"price": "10.50"
 		}
 	]
 }

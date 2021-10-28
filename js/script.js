@@ -19,6 +19,10 @@ window.onload = function(){
                 data[key].forEach(element => {
                     appendChildtoParent(document.getElementById(key), element);
                     console.log("\t" + element.name + " | "  + element.price);
+                    if(element.discount != null){
+                        document.getElementById("NoPromo").innerHTML = "";
+                        appendChildtoParent(document.getElementById(key), element, document.getElementById("Promociones"));
+                    }
                 });
             });
       }).catch(err => {
@@ -26,7 +30,7 @@ window.onload = function(){
       });
 }
 
-function appendChildtoParent(Parent, element) {
+function appendChildtoParent(Parent, element, promo = false) {
     var ExampleCard = document.getElementById("examplecard");
 
     var Clone = ExampleCard.cloneNode(true);
@@ -36,7 +40,12 @@ function appendChildtoParent(Parent, element) {
     var Card_Body = Card.getElementsByTagName('div')[0];
         Card_Body.getElementsByClassName('card-title')[0].innerHTML = element.name;
         Card_Body.getElementsByClassName('card-text')[0].innerHTML = element.description;
-        Card_Body.getElementsByClassName('price')[0].innerHTML = element.price;
+        if(element.discount != null)
+            Card_Body.getElementsByClassName('price')[0].innerHTML = "$<del>" + element.price + "</del> " + (parseFloat(element.price - element.discount)).toFixed(2);
+        else
+            Card_Body.getElementsByClassName('price')[0].innerHTML = "$" + parseFloat(element.price).toFixed(2);
+        if(promo != false)
+            Parent = promo;
 
     Parent.appendChild(Clone);
 }
