@@ -99,6 +99,20 @@
 			<img src="img/greenBack.png">
 			<h5 class="titles">Menú</h5>
 		</div>
+		<div class="row" id="allsearcher">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 mx-auto">
+				<input type="text" placeholder="Producto que desea buscar" style="width: 100%;" onclick="showsearcher()">
+				<div class="hidden" id="searcher" >
+					<div id="searcherblack" onclick="hidesearcher()"><span>X</span></div>
+					<div id="searcherbody">
+						<input type="text" placeholder="Producto que desea buscar" style="width: 80%; margin-left: 10%;" id="inputsearch" oninput="searcher(this.value)">
+						<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 rowPersonalized" id="searcherMenu">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<span id="Menu">
 			<!--Example Category-->

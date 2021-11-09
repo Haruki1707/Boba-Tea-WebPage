@@ -1,3 +1,5 @@
+var JSONdata;
+
 window.onload = function(){
     var menu = document.getElementById("Menu");
     var menuCategory = document.getElementById("exampleCategory");
@@ -5,6 +7,7 @@ window.onload = function(){
     fetch('MenuData.json').then(response => {
         return response.json();
       }).then(data => {
+          JSONdata = data;
         // Work with JSON data here
             Object.keys(data).forEach(key => {
 
@@ -28,6 +31,28 @@ window.onload = function(){
       }).catch(err => {
         alert("La pagina web debe de estar corriendo en un servidor (internet o local) para su correcto funcionamiento (CORS no permite fetch en archivos abiertos, solo en servidores)");
       });
+}
+
+function showsearcher(){
+    document.getElementById("searcher").classList.remove("hidden");
+    document.getElementById("inputsearch").value = "";
+    document.getElementById("searcherMenu").innerHTML = "";
+    document.getElementById("inputsearch").focus();
+}
+
+function hidesearcher(){
+    document.getElementById("searcher").classList.add("hidden");
+}
+
+function searcher(text){
+    document.getElementById("searcherMenu").innerHTML = "";
+    Object.keys(JSONdata).forEach(key => {
+        JSONdata[key].forEach(element => {
+            if(element.name.toLowerCase().includes(text.toLowerCase()) && text != ""){
+                appendChildtoParent(document.getElementById(key), element, document.getElementById("searcherMenu"));
+            }
+        });
+    });
 }
 
 function appendChildtoParent(Parent, element, promo = false) {
